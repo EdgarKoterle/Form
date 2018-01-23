@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+    <link rel="stylesheet" href="styleForm.css">
+</head>
+<body>
+    <div id="formTable" weight="150px" height="150px" align="center">
+        <table id="table">
+            <tr>
+                <td>
+                    <span class="name">First name: </span>
+                </td>
+                <td>
+                    <input id="fName" type="text" name="firstname">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td> <span id="errfname"></span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="name">Last name: </span> 
+                </td>
+                <td>
+                    <input id="lName"  type="text" name="lastname" >
+            </tr>
+            <tr>
+                <td></td>
+                <td> <span id="errlname"></span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="name">Date of birth: </span> 
+                </td>
+                <td>
+                    <input id="compareDate" type="date" name="date">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td> <span id="errDate"></span></td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="name">Gender: </span>        
+                </td>
+                <td>
+                    <input class="check" id="male" type="radio" name="gender" value="male" checked><span>Male</span><br>
+                    <input class="check" id="female" type="radio" name="gender" value="female"><span>Female</span>
+                </td>
+            </tr>
+            <tr>
+                <td><br>
+                    <span class="name">Show gender: </span>
+                </td>
+                <td><br>
+                    <select id="selectGender">
+                        <option name="selectGender" class="genderValue" value="a">Both</option>
+                        <option name="selectGender" class="genderValue" value="f">Female</option>
+                        <option name="selectGender" class="genderValue" value="m">Male</option>
+                    </select>
+                </td>
+            </tr>   
+            <tr>
+                <td></td>
+                <td><br><input type="checkbox" name="age" id="showAge"> <span>Show birthday/age</span> </td>
+            </tr>
+        </table>
+            <br>
+            <div id="btnSend" align="center"><button id="send" type="submit" name="odoslat">Submit</button></div>
+            
+         
+    </div>
+
+    <div class="table" align="center"></div>
+
+    <div id="controls" align="center"><button id="save">Save</button> <button id="load">Load</button>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="scriptForm.js"></script>
+   
+</body>
+</html>
+
