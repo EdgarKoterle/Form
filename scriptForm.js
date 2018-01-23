@@ -190,6 +190,9 @@
                 divTable.append(table);
             });
      }
+
+     document.getElementById("save").style.display="inline";
+     document.getElementById("clear").style.display="inline";
      }
     function getSelectedGender(){
          var selectedGender = $("option[name='selectGender']:checked").val();
@@ -222,6 +225,7 @@
             localStorage.persons=JSON.stringify(persons);
         }
         
+
     });
 
     $('#load').click(function(event)
@@ -232,6 +236,11 @@
             printTable();
         }
         
+    });
+
+    $('#clear').click(function(event)
+    {
+        localStorage.clear();
     });
     
 })(jQuery);

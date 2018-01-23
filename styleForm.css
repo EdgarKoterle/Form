@@ -45,5 +45,15 @@ font-size: 15px;
 	padding: 5px;
 }
 
+#save
+{
+	display: none;
+}
+
+#clear
+{
+	display: none;
+}
+
 
 
